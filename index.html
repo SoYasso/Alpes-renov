@@ -384,11 +384,12 @@ contctalpesprenov@gmail.com
                 feedback.className = "text-xs text-zinc-400";
 
                 var templateParams = {
-                    from_name: document.getElementById("nom").value,
-                    reply_to: document.getElementById("email").value,
+                    nom: document.getElementById("nom").value,
+                    email_client: document.getElementById("email").value,
                     phone: document.getElementById("telephone").value,
-                    service: document.getElementById("service").value,
-                    message: document.getElementById("message").value
+                    prestation: document.getElementById("service").value,
+                    description: document.getElementById("message").value,
+                    entreprise: document.getElementById("nom").value
                 };
 
                 emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
